@@ -1,7 +1,7 @@
 <?php
   session_start();
-  require('../config/config.php');
-  require('../config/common.php');
+  require('config/config.php');
+  require('config/common.php');
 
   if($_POST){
     $email = $_POST['email'];
@@ -38,16 +38,16 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Blog</b>Admin</a>
+    <a href=""><b>Blog</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -74,8 +74,9 @@
         </div>
         <div class="row">
           <!-- /.col -->
-          <div class="col-4">
+          <div class="container">
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <a type="button" href="register.php" class="btn btn-default btn-block">Register</a>
           </div>
           <!-- /.col -->
         </div>
@@ -91,10 +92,10 @@
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+<script src="../t/js/adminlte.min.js"></script>
 </body>
 </html>
